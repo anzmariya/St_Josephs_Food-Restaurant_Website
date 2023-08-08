@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lisu Bosa",serif;
+}
+
+
+body{
+    color: orangered;
+    background-color:  white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://t4.ftcdn.net/jpg/01/64/62/13/360_F_164621341_vA1ZtJNeXpctAy7ASvEMtl5R6RG1pzOa.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: white ;
+    border-style: solid;
+    border-width: 2px;
+}
+#formdiv{
+        padding-top: 15px;
+        border:2px solid;
+        height: 27vh;
+        width: 300px;
+        background-color: white;
+        border-radius: 2px;
+}
+label{
+    float: left;
+    margin-left: 25px;
+
+}
+.la{
+    margin-bottom: 10px;
+    
+}
+
+input{
+    width: 250px;
+    padding: 4px;
+    color:black;
+    border-radius: 2px;
+    border: 2px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(88, 88, 88, 0.5);
+    
+}
+button{
+    background-color: rgb(27, 137, 37);
+    color: white;
+    padding: 4px;
+    width: 260px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: large;
+
+}
+button:hover{
+    background-color: orange;
+}
+#ll{
+
+    margin-top: 20px;
+    border: 2px solid rgba(88, 88, 88, 0.5);
+    padding: 15px;
+    width: 270px;
+}
+#ww{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.ho:hover{
+    text-decoration: underline;
+}
+input:focus{
+    outline: 1px solid orangered;
+}

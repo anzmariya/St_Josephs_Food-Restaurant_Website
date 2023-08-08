@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.125rem;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0.5px; 
+}
+.navst{
+    height: 80px;
+    width: 100%;
+    opacity: white;
+    position: fixed;
+    background: rgba(152, 144, 141, 0.3);
+}
+.navbar{
+    align-items: center;
+    display: flex;   
+    justify-content: space-between;  
+    position: absolute;
+    width: 100%;
+}
+
+.logo{
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.linkitems{
+    display: inline-block;
+    margin: 10px 20px;
+    
+}
+/* underline slide from left transition */
+.links {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-top: -40px;
+}
+  
+.links:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(230, 84, 39);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#home{
+    background-image: url("./gallery/home1.jpg");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: rgb(124, 17, 17);
+    background-attachment: fixed;
+    background-position: top;
+    
+}
+h1{
+    font-family: 'Lisu Bosa', serif;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -1px;
+}
+#home h1{
+    padding-top: 200px;
+    font-family: 'Lisu Bosa', serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-left: 40px;
+    letter-spacing: -1px;
+   
+}
+
+.homebtn{
+    margin-left: 40px;
+    background-color: rgb(230, 84, 39);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+    border-color: transparent;
+}
+.homebtn:hover{
+
+    border-color: white;
+}
+#about{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYE5h-pV8IrqS7y2fUS0FgUyIdkVi4UqUs-g&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    align-items: center;
+    color: brown;
+    
+}
+#about div{
+    margin-right: 100px;
+}
+.moreabout{
+    text-decoration: none;
+    color: white;
+}
+.abimg{
+    width: 550px;
+    height: 400px;
+    padding: 50px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.abimg:hover{
+    width: 550px;
+    height: 450px;
+    transform: scale(1.5);
+}
+.moreabout:hover{
+    text-decoration: underline;
+}
+#menu{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIu9JSljiyVlyYclbG4IO4abF_qMS_XlRRmlLx6MBEN_yzbFQO3CSRu4ERlFpqbLK4Wv4&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.menucontent{
+    text-align: right;
+    margin-left: -300px;
+
+}
+.imgm1{
+    height: 20px;
+    width: 20px;    
+    padding: 200px;
+} 
+.imgm2{
+    height: 20px;
+    width: 20px;
+    padding-left: 5rem; 
+    
+}
+
+.img22{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+#contact{
+    height: 650px;
+    width: 100%;
+    background-color: rgb(230, 84, 39);
+    
+    color: white;
+}
+.contactdiv{
+    display: flex;
+    
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    padding-top: 50px;
+    text-align: center;
+}
+.iconss{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    
+}
+.icon1{
+    margin: 10px;
+}
+.icon2{
+    margin:10px;
+}
+.icon3{
+    margin: 10px;
+}
+.icon4{
+    margin: 10px;
+}
+.icon1:hover{
+    color: brown;
+}
+.icon2:hover{
+    color: brown;
+}
+.icon3:hover{
+    color: brown;
+}
+.icon4:hover{
+    color: brown;
+}
+.footer li a{
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+.footer li{
+    display: inline-block;
+    margin: 10px 10px;
+    margin-top: 0px;
+}
+.footer{
+    margin-top: 30px;
+    margin-left: -70px;
+    text-align: center;
+}
+.footer li a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
